@@ -2,19 +2,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
+    overflow-x: hidden;
 }
 
 #logo {
     position: relative;
-    top: 14px;
-    left: 415px;
+    top: 30px;
+    left: 275px;
     width: 20%;
 }
 
 #orange-bar {
     background-color: #FFAD00;
     width: 100%;
-    height: 75px;
+    height: 80px;
     position: relative;
 }
 
@@ -22,7 +23,7 @@ body {
     background-color: #FFAD00;
     width: 100%;
     height: 120px;
-    margin-top: -162px;
+    margin-top: -140px;
 }
 
 #top-nav ul li {
@@ -41,10 +42,10 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     position: relative;
-    top: -43px;
-    left: 740px;
+    top: -60px;
+    left: 550px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     border-style: solid;
     border-right-width: 1px;
     border-left-width: 1px;
@@ -55,4 +56,241 @@ body {
 
 #top-nav ul li a:hover {
     color: white;
+}
+
+#banner {
+    margin-left: 130px;
+}
+
+#white-box {
+    width: 85%;
+    margin-left: 400px;
+}
+
+#white-box ul {
+    list-style: none;
+}
+
+#white-box ul li {
+    display: inline-block;
+    /*margin-left: 100px;*/
+    margin-bottom: 40px;
+}
+
+.title-info {
+    width: 30%;
+}
+
+#light-grey-box {
+    background-color: #F8F3E9;
+}
+
+#light-grey-box ul {
+    list-style: none;
+    margin-left: 296px;
+}
+
+#light-grey-box ul li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-border {
+    border-radius: 10px;
+}
+
+#dark-red-box {
+    background-color: #310000;
+    margin-top: -15px;
+    height: 190px;
+}
+
+#dark-red-box ul {
+    list-style: none;
+    margin-left: 565px;
+}
+
+#dark-red-box ul li {
+    display: inline-block;
+    margin-left: -232px;
+}
+
+.image-title {
+    color: #BFF306;
+    margin-top: -100px;
+    margin-left: 10px;
+}
+
+.image-title-info {
+    color: white;
+    width: 50%;
+    margin-top: -20px;
+    margin-left: 10px
+}
+
+#footer {
+    background-color: #EDA100;
+    width: 100%;
+    height: 50px;
+    margin-top: -16px;
+}
+
+#footer p {
+    text-align: center;
+    padding-top: 17px;
+}
+
+/*--START MEDIA QUERIES--*/
+
+@media only screen and (min-width: 150px) and (max-width: 768px) {
+    
+body {
+    background-color: white;
+    overflow-x: hidden;
+    width: 100%;
+    }
+    
+#logo {
+    position: relative;
+    top: 15px;
+    left: 45px;
+    width: 20%;
+}
+    
+#orange-bar {
+    background-color: #FFAD00;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+#top-nav {
+    background-color: #FFAD00;
+    width: 100%;
+    height: 120px;
+    margin-top: -120px;
+}
+
+#top-nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 5px;    
+}
+
+#top-nav ul li a {
+    text-decoration: none;
+    background-color: #FFAD00;
+    color: #2C1D00;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    position: relative;
+    top: -38px;
+    left: 80px;
+    font-size: 10px;
+    font-weight: 400;
+    border-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top: none;
+    border-bottom: none;
+    border-color: white;
+}
+
+#top-nav ul li a:hover {
+    color: white;
+}
+
+#banner {
+    margin-left: 0px;
+    width: 100%;
+}
+
+#white-box {
+    width: 105%;
+    margin-left: 40px;
+}
+
+#white-box ul {
+    list-style: none;
+}
+
+#white-box ul li {
+    display: block;
+    /*margin-left: 100px;*/
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+.title-info {
+    width: 50%;
+}
+
+#light-grey-box {
+    background-color: #F8F3E9;
+    width: 100%;
+    height: 148px;
+}
+
+#light-grey-box ul {
+    list-style: none;
+    margin-left: 85px;
+}
+
+#light-grey-box ul li {
+    display: block;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.image-border {
+    border-radius: 10px;
+    width: 55%;
+}
+
+#dark-red-box {
+    background-color: #310000;
+    margin-top: -15px;
+    height: 800px;
+}
+
+#dark-red-box ul {
+    list-style: none;
+    margin-left: 270px;
+    padding-top: 15px;
+}
+
+#dark-red-box ul li {
+    display: block;
+    margin-left: px;
+}
+
+.image-title {
+    color: #BFF306;
+    margin-top: -100px;
+    margin-left: 10px;
+}
+
+.image-title-info {
+    color: white;
+    width: 50%;
+    margin-top: -20px;
+    margin-left: 10px
+}
+
+#footer {
+    background-color: #EDA100;
+    width: 100%;
+    height: 50px;
+    margin-top: -16px;
+}
+
+#footer p {
+    text-align: center;
+    padding-top: 15px;
 }
