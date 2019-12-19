@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Petshop</title>
-    <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">  
+    <title>Petshop</title>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+    <header class="header">
+        <div class="inner-header-container">
+            <a href="index.html"><img id="logo" src="img/logo.png"></a>
         
         <nav id ="top-nav">
-             <div id="orange-bar"></div>
-            
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#petmart.html">PetMart</a></li>
@@ -24,31 +23,53 @@
                 <li><a href="#contact.html">Contact</a></li>
             </ul>
         </nav>
+        </div>
+        <div class="mobile-header">
+            <a href="index.html"><img id="logo" src="img/logo.png"></a>
+            <div class="mobile-menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
     </header>
-    
+    <div class="clear-header"></div>
     <section id="main-container">
-        <div>
-            <img id="banner" src="img/banner.png">
+        <div class="hero-image">
         </div>
         
-        <div id="white-box">
-            <ul>
-                <li><img class="animals" src="img/fox.png">
+        <div id="section-one">
+            <div class="section-wrapper">
+                <div class="section-inner">
+                    <div>
+                    <img class="animals" src="img/fox.png">
                     <h3 class="title">What they need</h3>
-                    <p class="title-info">If you're having problems editing this website template, then don't hesitate to ask for help on the<a href="index.html"> Forums</a>.</p></li>
+                    <p class="title-info">If you're having problems editing this website template, then don't hesitate to ask for help on the<a href="index.html"> Forums</a>.</p>
+                    </div>
+                </div>
 
-                 <li><img class="title" src="img/cat.png">
+                <div class="section-inner">
+                    <div>
+                    <img class="title" src="img/cat.png">
                     <h3 class="title">Something good</h3>
-                     <p class="title-info">If you're having problems editing this website template, then don't hesitate to ask for help on the<a href="index.html"> Forums</a>.</p></li>
+                    <p class="title-info">If you're having problems editing this website template, then don't hesitate to ask for help on the<a href="index.html"> Forums</a>.</p>
+                    </div>
+                </div>
 
-                 <li><img class="animals" src="img/fish.png">
+                <div class="section-inner">
+                    <div>
+                    <img class="animals" src="img/fish.png">
                     <h3 class="title">Kinds of Fish</h3>
-                     <p class="title-info">If you're having problems editing this website template, then don't hesitate to ask for help on the<a href="index.html"> Forums</a>.</p></li>
+                    <p class="title-info">If you're having problems editing this website template, then don't hesitate to ask for help on the<a href="index.html"> Forums</a>.</p>
+                    </div>
+                </div>
 
-                  <li><img class="animals" src="img/bird.png">
+                <div class="section-inner">
+                    <div>
+                    <img class="animals" src="img/bird.png">
                     <h3 class="animals">Fun birds</h3>
-                      <p class="title-info">If you're having problems editing this website template, then don't hesitate to ask for help on the<a href="index.html"> Forums</a>.</p></li>
-            </ul>
+                    <p class="title-info">If you're having problems editing this website template, then don't hesitate to ask for help on the<a href="index.html"> Forums</a>.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div id="light-grey-box">
@@ -66,12 +87,11 @@
                 <li><img src="img/petshop3.png"><h4 class="image-title">Keep them healthy</h4><p class="image-title-info">This is just a place holder, so you can see what the site would look like.</p></li>
                 <li><img src="img/petshop4.png"><h4 class="image-title">Love...love...love...pets</h4><p class="image-title-info">This is just a place holder, so you can see what the site would look like.</p></li>
             </ul>
-        
         </div>
     </section>
     
     <footer id="footer">
-        <p>&copy; 2011 Petshop. All Rights Reserved.</p>
+        <p>&copy; 2019 Petshop. All Rights Reserved.</p>
     </footer>
     
 
