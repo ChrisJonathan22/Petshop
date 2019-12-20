@@ -55,7 +55,7 @@ body, html {
 }
 
 #top-nav ul li:hover {
-    transition: all 1s;
+    transition: all 0.5s;
     border-bottom-color:white;
 }
 
@@ -75,13 +75,23 @@ body, html {
 
 /* End of Header */
 
+/* Main container */
+
+    #main-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+/* End of Main container */
+
 /* Hero image */
 
 .hero-image {
     background-image: url('../img/banner.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
+    background-position: center;
+    height: 60vh;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -197,6 +207,50 @@ body, html {
 /*--START MEDIA QUERIES--*/
 
 
+@media screen and (max-width: 1140px) {
+
+    /* Light grey box */
+    #light-grey-box ul {
+        display: block;
+    }
+
+    #light-grey-box ul li {
+        margin-left: 0;
+        text-align: center;
+    }
+    /* End of Light grey box */
+
+    /* Dark red box */
+
+    #dark-red-box ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #dark-red-box ul li {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .dark-red-box-inner {
+        width: 300px;
+        text-align: center;
+    }
+
+    .dark-red-box-inner img {
+        width: 100%;
+    }
+
+    .image-title-info {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+/* 
 @media screen and (min-width: 480px) and (max-width: 870px) {
 
     .header, .clear-header {
@@ -227,4 +281,4 @@ body, html {
         right: 10px;
         top: 0;
     }
-}
+} */
