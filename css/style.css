@@ -6,6 +6,10 @@ body, html {
     overflow-x: hidden;
 }
 
+body {
+    font-family: cursive, monospace;
+}
+
 /* Header */
 .header {
     width: 100%;
@@ -17,8 +21,17 @@ body, html {
     height: 77px;
 }
 
-.mobile-header {
+.mobile-header, .mobile-menu-items {
     display: none;
+}
+
+.mobile-menu-drawer {
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    position: fixed;
+    transition: width 1s;
 }
 
 .inner-header-container {
@@ -31,7 +44,7 @@ body, html {
 #logo {
     width: 200px;
     position: absolute;
-    bottom: -27px;
+    bottom: -32px;
     left: 10px;
 }
 
@@ -62,7 +75,7 @@ body, html {
 #top-nav ul li a {
     text-decoration: none;
     background-color: #FFAD00;
-    color: #2C1D00;
+    color: #FFFFFF;
     position: relative;
     font-size: 20px;
     font-weight: 400;
@@ -70,7 +83,7 @@ body, html {
 }
 
 #top-nav ul li a:hover {
-    color: white;
+    color: #2C1D00;
 }
 
 /* End of Header */
@@ -182,7 +195,7 @@ body, html {
 }
 
 .image-title-info {
-    color: white;
+    color: #FFFFFF;
     width: 50%;
     margin-top: -20px;
     margin-left: 10px
@@ -247,6 +260,74 @@ body, html {
         width: 80%;
         margin: 0 auto;
     }
+}
+
+@media screen and  (max-width: 920px) {
+    /* Mobile menu */
+        .inner-header-container {
+            display: none;
+        }
+
+        .mobile-header {
+            display: block;
+            height: 60px;
+            position: relative;
+        }
+
+        .clear-header {
+            height: 60px;
+        }
+
+        .mobile-logo {
+            text-decoration: none;
+            font-size: 2em;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+
+        .mobile-menu-icon {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 2px;
+            font-size: 2.5em;
+            color: #FFFFFF;
+        }
+
+        .mobile-menu-items {
+            width: 100px;
+            margin: 0 auto;
+            padding-top: 50px;
+            list-style: none;
+        }
+
+        .mobile-menu-items li {
+            margin: 20px;
+        }
+
+        .mobile-menu-items li a{
+            text-decoration: none;
+        }
+
+        .show-drawer {
+            width: 100%;
+        }
+
+        .show-menu-items {
+            display: block;
+        }
+    /* End of Mobile menu */
+}
+
+@media screen and (max-width: 690px) {
+    /* Dark red box */
+    #dark-red-box ul li {
+        width: 100%;
+    }
+    /* End of Dark red box */
 }
 
 
