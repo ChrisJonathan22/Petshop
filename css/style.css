@@ -298,18 +298,23 @@ body {
         }
 
         .mobile-menu-items {
-            width: 100px;
-            margin: 0 auto;
-            padding-top: 50px;
+            padding-left: 0;
             list-style: none;
         }
 
         .mobile-menu-items li {
-            margin: 20px;
+            margin-bottom: 20px;
+            border: 1px #FFAD00 solid;
+            background-color: #FFAD00;
+            padding: 10px;
+            text-align: center;
         }
 
         .mobile-menu-items li a{
             text-decoration: none;
+            color: #FFFFFF;
+            display: block;
+            font-size: 1.2em;
         }
 
         .show-drawer {
@@ -329,37 +334,3 @@ body {
     }
     /* End of Dark red box */
 }
-
-
-/* 
-@media screen and (min-width: 480px) and (max-width: 870px) {
-
-    .header, .clear-header {
-        height: 70px;
-    }
-
-    .hero-image {
-        height: 300px;
-    }
-
-    .inner-header-container {
-        display: none;
-    }
-
-    .mobile-header {
-        height: 100%;
-        display: initial;
-        position: relative;
-    }
-
-    .mobile-header #logo {
-        position: absolute;
-        top: 23px;
-    }
-
-    .mobile-menu-icon {
-        position: absolute;
-        right: 10px;
-        top: 0;
-    }
-} */
