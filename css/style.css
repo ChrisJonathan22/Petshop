@@ -295,6 +295,7 @@ body {
             top: 2px;
             font-size: 2.5em;
             color: #FFFFFF;
+            cursor: pointer;
         }
 
         .mobile-menu-items {
